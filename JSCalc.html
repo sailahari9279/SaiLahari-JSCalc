@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CALCULATOR</title>
+   <script>
+       function add(){
+                 var a= parseInt(document.getElementById("no1").value);
+              var b= parseInt(document.getElementById("no2").value);
+               var c=a+b;
+           document.getElementById("res").value=c;
+           
+  
+ }
+ function mul(){
+                 var a= parseInt(document.getElementById("no1").value);
+              var b= parseInt(document.getElementById("no2").value);
+              var c=a*b;
+           document.getElementById("res").value=c;
+       
+  
+ }
+ function div(){
+   
+                 var a= parseInt(document.getElementById("no1").value);
+              var b= parseInt(document.getElementById("no2").value);
+               var c=a/b;
+           document.getElementById("res").value=c;    
+  
+ }
+ function mod(){
+   
+                 var a= parseInt(document.getElementById("no1").value);
+              var b= parseInt(document.getElementById("no2").value);
+               var c=a%b;
+           document.getElementById("res").value=c;
+ }
+   </script>
+   <style>
+      .container{
+  background-color:gray;
+  color:white;
+  
+}
+
+   </style>
+</head>
+<body>
+    
+        <div class="container">
+        <h2>CALCULATOR</h2>
+          <form >
+          <table>
+           <div> <label >NO1:</label>
+            <input type="number"   id="no1"required/> <br/><br/>
+             <label>NO2:</label>
+        <input type="number" id="no2"  required><br/><br/>
+             <label>RES:</label>
+             <input type="number" id ="res"><br/><br/>
+        <div>
+          <table>
+           <tr>
+             <td >  <input type="button" value="ADD" onclick="add()"></td>
+             <td><input type="button" value="MUL" onclick="mul()"></td>
+             <td><input type="button" value="DIV" onclick="div()"></td>
+               <td><input type="button" value="MOD" onclick="mod()"></td>
+             </tr>
+            <table>
+           </div>
+          </form>
+        </div>
+       
+        
+      
+        
+        
+</body>
+</html>
